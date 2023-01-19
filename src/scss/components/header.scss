@@ -1,0 +1,33 @@
+@import "../variables/variables.scss";
+header{
+    background-color: $white;
+}
+nav{
+    display: flex;
+    align-items: center ;
+    padding: 30px 90px;
+    box-shadow: 0px 3px 6px $gray;
+    .cointainer-logo{
+        display: flex;
+        align-items: center;
+        width: 30%;
+    }
+
+    .cointainer-nav-link{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        letter-spacing: 0px;
+        width: 70%;
+        li{
+            list-style: none;
+            a{
+                color: $link-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

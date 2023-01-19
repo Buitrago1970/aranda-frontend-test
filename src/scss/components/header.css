@@ -1,0 +1,32 @@
+header {
+  background-color: #FFFFFF;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 30px 90px;
+  box-shadow: 0px 3px 6px #8395A7;
+}
+nav .cointainer-logo {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+nav .cointainer-nav-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  letter-spacing: 0px;
+  width: 70%;
+}
+nav .cointainer-nav-link li {
+  list-style: none;
+}
+nav .cointainer-nav-link li a {
+  color: #425966;
+  text-decoration: none;
+}/*# sourceMappingURL=header.css.map */

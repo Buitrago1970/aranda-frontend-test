@@ -1,14 +1,18 @@
 import React from 'react'
 
+import "../scss/components/header.scss"
+
 export default function Navbar() {
   return (
     <header>
       <nav>
-        <div>
-        <h1>Logo</h1>
+        <div className='cointainer-logo'>
+          <a href="/">
+            {/* <img src="{logo}" alt="logo" /> */}
+          </a>
         </div>
-        <div>
-        <ul>
+        
+        <ul className='cointainer-nav-link'>
           <li>
             <a href="/">Home</a>
           </li>
@@ -31,7 +35,7 @@ export default function Navbar() {
             <a href="/contact">Sopas</a>
           </li>
           </ul>
-        </div>
+    
        
           </nav>
     </header>
