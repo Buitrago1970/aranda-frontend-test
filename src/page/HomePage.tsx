@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import HeroImage from '../components/HeroImage'
 import Options from '../components/Options'
 import NewReipes from '../components/NewRecipes'
+import Sponsorship from '../components/Sponsorship'
 
 export default function homePage() {
   return (
@@ -11,6 +12,7 @@ export default function homePage() {
     <HeroImage/>
     <Options/>
     <NewReipes/>
+    <Sponsorship/>
     </>
   )
 }
