@@ -13,6 +13,9 @@ nav .cointainer-logo {
   align-items: center;
   width: 30%;
 }
+nav .cointainer-logo a {
+  text-decoration: none;
+}
 nav .cointainer-nav-link {
   display: flex;
   justify-content: space-between;

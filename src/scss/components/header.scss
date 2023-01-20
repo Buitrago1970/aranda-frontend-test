@@ -11,6 +11,10 @@ nav{
         display: flex;
         align-items: center;
         width: 30%;
+        & a{
+            text-decoration: none;
+        }
+
     }
 
     .cointainer-nav-link{
