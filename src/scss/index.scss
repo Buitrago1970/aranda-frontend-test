@@ -5,3 +5,14 @@
 @import "./components/options.scss";
 @import "./components/_newRecipes.scss";
 @import "./components/_sponsorship.scss";
+
+
+//fonts
+@font-face {
+    font-family: 'Monster Clubhouse';
+    src: url('../assets/fonts/Monster\ Clubhouse.ttf') format('truetype');
+  }
+@font-face {
+  font-family: 'Poppins' ;
+  src: url('../assets/fonts/Poppins-Regular.ttf')format('truetype');
+}

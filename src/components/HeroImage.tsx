@@ -8,7 +8,7 @@ export default function HeroImage() {
       <img src={Image} alt="Hero Image" />
       <div className="hero-text">
         <h1>Recetas</h1>
-        <h2>Para todos</h2>
+        <h2>para todos</h2>
       </div>
     </div>
   );

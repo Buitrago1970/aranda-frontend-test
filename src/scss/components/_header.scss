@@ -1,29 +1,39 @@
 @import "../variables/variables.scss";
 header{
     background-color: $white;
+    box-shadow: 0px 3px 6px #8395A7;
 }
 nav{
     display: flex;
     align-items: center ;
-    padding: 30px 150px;
-    box-shadow: 0px 3px 6px $gray;
+    min-height: 69px;
+    padding: 0 90px;
     .cointainer-logo{
         display: flex;
         align-items: center;
         width: 30%;
-        & a{
-            text-decoration: none;
-        }
-
+        text-decoration: none;
+        display: flex;
+  
+            .recipe{
+                color: $text-color;
+                margin: 0;
+                font-family: $secondary-font;
+                font-size: 40px;
+            }
+            .app{
+                color: $red;
+                margin: 0;
+                font-size: 30px;
+            }
     }
-
     .cointainer-nav-link{
         display: flex;
         justify-content: space-between;
         width: 100%;
         margin: 0;
         padding: 0;
-        font-size: 16px;
+        font-size: 13px;
         letter-spacing: 0px;
         width: 70%;
         li{

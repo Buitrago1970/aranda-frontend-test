@@ -1,12 +1,17 @@
 @import "../variables/variables.scss";
 
 .new-recipes{
-   padding: 0 130px;
+   padding: 0 100px;
 }
 .recipes-title{
-    font-size: 30px;
     color: $red;
     padding-bottom: 70px;
+   
+    h2{
+    font-size: 67px;
+        font-family: $secondary-font;
+        font-weight: 100;
+    }
 
 }
 .container-new-recipes{
@@ -43,16 +48,20 @@ margin-top: 30%;
 .container-recipe-title{
 text-align: center;
 display: flex;
+align-items: center;
 justify-content: space-evenly;
 width: 200px;
 margin: auto;
 color: $red;
-font-size: 30px;
- .title-name{
-
- }
- .title-product{
-
+.title-name{
+    font-size: 30px;
+    
+    
+}
+.title-product{  
+    font-size: 30px;
+    font-family: $secondary-font;
+    font-weight: 100;
  }
 }
 .recipe-ratings{

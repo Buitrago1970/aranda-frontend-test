@@ -1,6 +1,5 @@
 import React from 'react'
 
-import "../scss/components/header.scss"
 
 
 export default function Navbar() {
@@ -8,10 +7,10 @@ export default function Navbar() {
     <header>
       <nav>
         <div className='cointainer-logo'>
-          {/* <a href="/">
-            <p>Recipe</p>
-            <p>App</p>
-          </a> */}
+         
+            <p className='recipe'>Recipe</p>
+            <p className='app'>App</p>
+          
         </div>
         
         <ul className='cointainer-nav-link'>
@@ -37,8 +36,6 @@ export default function Navbar() {
             <a href="/contact">Sopas</a>
           </li>
           </ul>
-    
-       
           </nav>
     </header>
   )

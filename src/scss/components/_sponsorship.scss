@@ -12,7 +12,12 @@
 }
 .sponsorship-title{
     color: $text-color;
-    font-size: 30px;
+    font-size: 35px;
+    font-family: $secondary-font;
+    h2{
+        font-weight: 100;
+
+    }
 
 }
 .sponsorship-img{
