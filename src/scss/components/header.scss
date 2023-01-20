@@ -5,7 +5,7 @@ header{
 nav{
     display: flex;
     align-items: center ;
-    padding: 30px 90px;
+    padding: 30px 150px;
     box-shadow: 0px 3px 6px $gray;
     .cointainer-logo{
         display: flex;
@@ -29,7 +29,7 @@ nav{
         li{
             list-style: none;
             a{
-                color: $link-color;
+                color: $text-color;
                 text-decoration: none;
             }
         }
