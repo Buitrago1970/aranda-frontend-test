@@ -7,10 +7,8 @@ export default function Navbar() {
     <header>
       <nav>
         <div className='cointainer-logo'>
-         
             <p className='recipe'>Recipe</p>
             <p className='app'>App</p>
-          
         </div>
         
         <ul className='cointainer-nav-link'>

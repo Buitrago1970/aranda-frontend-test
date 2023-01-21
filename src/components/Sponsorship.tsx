@@ -11,7 +11,7 @@ export default function Sponsorship() {
             <h2 >Con el patrocinio de </h2>
         </div>
         <div className="sponsorship-img">
-                <img src={SponsorshipImage} alt="sponsorship"/>
+                <img src={SponsorshipImage} alt="sponsorship" loading="lazy"/>
 
         </div>    
     </div>    
