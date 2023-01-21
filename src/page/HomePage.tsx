@@ -8,7 +8,7 @@ import { useQuery } from 'react-query'
 import axios from 'axios'
 import { AppContext } from '../context/AppContext'
 
-export default function homePage() {
+export default function HomePage() {
 
   // const state = useContext(AppContext) 
   const [recipes, setRecipes] = useState([])
@@ -30,7 +30,7 @@ export default function homePage() {
     <Navbar/>
     <HeroImage/>
     <Options/>
-    <NewReipes recipes={recipes}/>
+    <NewReipes />
     <Sponsorship/>
     </>
   )
