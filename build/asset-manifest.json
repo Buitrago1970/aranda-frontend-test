@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.361820d0.css",
+    "main.js": "/static/js/main.14267522.js",
+    "static/js/787.15ad8a19.chunk.js": "/static/js/787.15ad8a19.chunk.js",
+    "static/media/bcq.jpg": "/static/media/bcq.c34e44b3e59aa9816164.jpg",
+    "static/media/Grupo 7610.png": "/static/media/Grupo 7610.b2bbff17ca1781a1d459.png",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/cherry.png": "/static/media/cherry.601aa43496427d7938d0.png",
+    "static/media/Ojingeo-muchim-5.png": "/static/media/Ojingeo-muchim-5.3ae80bfbd72d61b72b2d.png",
+    "static/media/Monster Clubhouse.ttf": "/static/media/Monster Clubhouse.526c6ff9781ae1c36baf.ttf",
+    "static/media/Ojingeo-muchim.png": "/static/media/Ojingeo-muchim.294fdf381509ada8d691.png",
+    "static/media/Ojingeo-muchim-1.png": "/static/media/Ojingeo-muchim-1.9ffcaf222e9b920d35bc.png",
+    "static/media/ic_time.svg": "/static/media/ic_time.7f15072ffbaadf7335537613b89b5340.svg",
+    "static/media/ic_cake.svg": "/static/media/ic_cake.c70db41a49993489372dc6abe0656417.svg",
+    "static/media/ic_vegetarian.svg": "/static/media/ic_vegetarian.8492fb5b70affc98a0a5c577ed1deea9.svg",
+    "static/media/ic_portion.svg": "/static/media/ic_portion.6d70690b9d859084b3e40e3cc54d3c39.svg",
+    "static/media/ic_kids.svg": "/static/media/ic_kids.a776f77f8b46bf84dca15a3bcef11d2a.svg",
+    "static/media/ic_soup.svg": "/static/media/ic_soup.e654cc6d794245907ac9adca3367e174.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/ic_main.svg": "/static/media/ic_main.4fcfa5fe9df45b4fb143001c52f7e332.svg",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/ic_home.svg": "/static/media/ic_home.fc2ca198735d6f9bb942a72f5e5d87b4.svg",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/ic_fast-food.svg": "/static/media/ic_fast-food.c7d435ef1f0424bceceafd15f4e051bf.svg",
+    "index.html": "/index.html",
+    "static/media/ic_star.svg": "/static/media/ic_star.b7fc05fe39bff5a8a9ef061efab4ef21.svg",
+    "static/media/ic_favorite.svg": "/static/media/ic_favorite.ca2e91db7f9cf246b7447c9eaa78d43c.svg",
+    "main.361820d0.css.map": "/static/css/main.361820d0.css.map",
+    "main.14267522.js.map": "/static/js/main.14267522.js.map",
+    "787.15ad8a19.chunk.js.map": "/static/js/787.15ad8a19.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.361820d0.css",
+    "static/js/main.14267522.js"
+  ]
+}
