@@ -1,12 +1,16 @@
 @import "../variables/variables.scss";
 
 .new-recipes{
-   padding: 0 10px;
+  padding: 0 100px;
+   @include media-down(md){
+        padding: 0 20px;
+   }
+   @include media-down(sm){
+       padding: 0 5px;
+   }
 }
 .recipes-title{
     color: $red;
-    padding-bottom: 70px;
-   
     h2{
     font-size: 67px;
         font-family: $secondary-font;
@@ -20,15 +24,18 @@
     }
 
 }
-.container-new-recipes{
-    display: flex;
-    justify-content: center;
-}
+.slick-slide > div {
+    margin: 0 5px;
+  }
+  .slick-slide {
+    height: 300px;
+    margin-top: 80px;
+  }
 .new-recipe-item{
-    width: 272px;
+    max-width: 272px;
     height: 270px;
+    cursor: pointer;
     position: relative;
-    margin: 0 10px;
     @include box;    
     @include media-down(md){
         width: 266px;

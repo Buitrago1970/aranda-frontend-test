@@ -30,7 +30,7 @@ export default function HomePage() {
     <Header/>
     <HeroImage/>
     <Options/>
-    {/* <NewReipes /> */}
+    <NewReipes />
     <Sponsorship/>
     </>
   )
