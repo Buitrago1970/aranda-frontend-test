@@ -1,5 +1,3 @@
-import React from "react";
-
 import Image from "../assets/bcq.jpg";
 
 export default function HeroImage() {

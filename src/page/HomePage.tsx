@@ -1,4 +1,4 @@
-import {useContext, useEffect} from 'react'
+import {useContext} from 'react'
 import Header from '../components/Header'
 import HeroImage from '../components/HeroImage'
 import Options from '../components/Options'

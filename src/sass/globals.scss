@@ -10,7 +10,7 @@ html{
 body{
     padding: 0;
     margin: 0;
-    font-family: $principal-font;
+    font-family: $principal-font, Helvetica, Arial, sans-serif;
 }
 
 @mixin box {

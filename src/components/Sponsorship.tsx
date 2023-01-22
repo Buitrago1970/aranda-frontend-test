@@ -1,5 +1,3 @@
-import React from "react";
-
 import SponsorshipImage from "../assets/Grupo 7610.png";
 
 export default function Sponsorship() {

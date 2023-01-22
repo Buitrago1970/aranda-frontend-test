@@ -60,6 +60,7 @@ nav{
     }
     .house-icon{
         display: none;
+        cursor: pointer;
         @include media-down(md){
             display: block;
             font-size: 30px;
