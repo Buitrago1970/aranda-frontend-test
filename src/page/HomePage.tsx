@@ -1,4 +1,4 @@
-import React,{useContext, useState, useEffect} from 'react'
+import {useContext, useEffect} from 'react'
 import Header from '../components/Header'
 import HeroImage from '../components/HeroImage'
 import Options from '../components/Options'
@@ -10,28 +10,34 @@ import { AppContext } from '../context/AppContext'
 
 export default function HomePage() {
 
-  // const state = useContext(AppContext) 
-  const [recipes, setRecipes] = useState([])
- 
-  const { data, status } = useQuery('randomRecipes', async () => {
+  const state = useContext(AppContext);
+  const { setRecipes } = useContext(AppContext);
+
+
+  const { data, status } = useQuery<{recipes: any[]}>(['randomRecipes', async () => {
     const response = await axios.get(
-        'https://api.spoonacular.com/recipes/random?number=4&apiKey=50ec4a4303164ffabf9abc63a5ddcb96'
+        'https://api.spoonacular.com/recipes/random?number=4&apiKey=3c4d9997a2954bbcad4b11794720ee4b'
     )
     return response.data
-  })
-  useEffect(() => {
-     if(status === 'success') {
-         setRecipes(data.recipes)
-     }
-  }, [status, data])
+  }], {
+    cacheTime: 1000 * 60 * 60, // 1 hora de cache
+    staleTime: 1000 * 30, // 30 segundos de stale time
+    onSuccess: (data) => {
+      setRecipes(data.recipes)
+    },
+    onError: (error) => {
+      console.log(error)
+    }
+  });
+
 
   return (
     <>
-    <Header/>
-    <HeroImage/>
-    <Options/>
-    <NewReipes />
-    <Sponsorship/>
+      <Header/>
+      <HeroImage/>
+      <Options/>
+      <NewReipes />
+      <Sponsorship/>
     </>
   )
 }

@@ -11,10 +11,10 @@
     margin-top: 200px;
     @include media-down(md){
         height: 116px;
-        
     }
     @include media-down(sm){
         height: 70px;
+        margin-top: 50px;
     }
 }
 .sponsorship-title{

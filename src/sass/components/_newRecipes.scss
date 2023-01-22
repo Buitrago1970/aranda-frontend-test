@@ -3,8 +3,11 @@
 .new-recipes{
   padding: 0 100px;
    @include media-down(md){
-        padding: 0
+        padding: 0 30px
    }
+    @include media-down(sm){
+          padding: 0 10px ;
+    }
 }
 .recipes-title{
     color: $red;
@@ -38,18 +41,26 @@
     }
     @include media-down(sm){
         min-width: 180px;
-        min-height: 182px;
+        height: 210px;
     }
     .recipe-info-back{
        opacity: 0;       
     }
 }
 .recipe-image{
-    width:100%;
+    width:100%; 
     display: flex;
     justify-content: center;
     position: absolute;
     bottom: 60%;
+    img{
+        width: 164px;
+        height: 158px;
+        @include media-down(sm){
+            width: 111px;
+            height: 107px;
+        }
+    }
 }
 .recipe-info{
 margin-top: 30%;
@@ -69,6 +80,9 @@ margin-top: 30%;
     .recipe-image{
         bottom: 66%;
         transition: bottom 0.3s ease;
+        @include media-down(sm){
+            bottom: 75%;
+        }
     }
     .recipe-info-back{
         display: block;
@@ -81,6 +95,9 @@ margin-top: 30%;
         transition-delay: 0.2s;
         @include media-down(md){
             margin-top: -65%;
+        }
+        @include media-down(itm){
+            margin-top: -70%;
         }
      
         .item-recipe-preparation{
@@ -108,18 +125,18 @@ margin-top: 30%;
 
     }
 }
-
-
 .container-recipe-title{
 text-align: center;
 display: flex;
 align-items: center;
-justify-content: space-evenly;
+justify-content: center;
 margin: auto;
 color: $red;
 
 .title-name{
     font-size: 30px;
+    font-weight: 100;
+    margin-right: 5px;
     @include media-down(sm){
         font-size: 20px;
     }
@@ -151,6 +168,7 @@ color: $red;
         align-items: center;
         p{
             margin-left: 10px;
+            font-weight: 100;
         }
     }
     .like{
