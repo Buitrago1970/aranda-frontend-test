@@ -3,10 +3,7 @@
 .new-recipes{
   padding: 0 100px;
    @include media-down(md){
-        padding: 0 20px;
-   }
-   @include media-down(sm){
-       padding: 0 5px;
+        padding: 0
    }
 }
 .recipes-title{
@@ -28,21 +25,23 @@
     margin: 0 5px;
   }
   .slick-slide {
-    height: 300px;
+    height: 400px;
     margin-top: 80px;
   }
 .new-recipe-item{
     max-width: 272px;
     height: 270px;
-    cursor: pointer;
     position: relative;
-    @include box;    
+    @include box;
     @include media-down(md){
         width: 266px;
     }
     @include media-down(sm){
         min-width: 180px;
         min-height: 182px;
+    }
+    .recipe-info-back{
+       opacity: 0;       
     }
 }
 .recipe-image{
@@ -51,14 +50,62 @@
     justify-content: center;
     position: absolute;
     bottom: 60%;
-    img{
-   
-    }
 }
 .recipe-info{
 margin-top: 30%;
     @include media-down(sm){
         margin-top: 40%;
+    }
+}
+
+.new-recipe-item:hover{
+    height: 330px;
+    transition: height 0.4s ease;
+    .recipe-info{
+       opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+        transition-delay: 0.2s;
+    }
+    .recipe-image{
+        bottom: 66%;
+        transition: bottom 0.3s ease;
+    }
+    .recipe-info-back{
+        display: block;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -63%;
+        transition: opacity 0.5s ease-in-out;
+        transition-delay: 0.2s;
+        @include media-down(md){
+            margin-top: -65%;
+        }
+     
+        .item-recipe-preparation{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px 0;
+            @include media-down(sm){
+                margin: 5px 0;
+            }
+            .recipe-preparation-title{
+                font-size: 15px;
+                color: $red;
+                font-family: $secondary-font;
+                margin: 3px 0;
+            }
+            .recipe-preparation-subtitle{
+                font-size: 13px;
+                color: $text-color;
+                margin:0;
+                font-weight: 100;
+
+            }
+        }
+
     }
 }
 
@@ -76,9 +123,9 @@ color: $red;
     @include media-down(sm){
         font-size: 20px;
     }
-    
+
 }
-.title-product{  
+.title-product{
     font-size: 30px;
     font-family: $secondary-font;
     font-weight: 100;
