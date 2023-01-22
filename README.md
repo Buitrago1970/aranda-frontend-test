@@ -18,6 +18,9 @@ Instrucciones de instalación
 Clonar el repositorio: git clone https://github.com/usuario/proyecto-prueba-tecnica.git
 Instalar las dependencias: `npm install` o `yarn install`
 Iniciar el servidor de desarrollo: `npm start` o `yarn start`
+
+Proyecto subido a `https://recipe-app-juan-buitrago.netlify.app`
+
 Licencia
 
 Este proyecto está licenciado bajo la licencia MIT.
