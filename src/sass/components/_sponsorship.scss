@@ -9,17 +9,39 @@
     width: 100%;
     height: 167px;
     margin-top: 200px;
+    @include media-down(md){
+        height: 116px;
+        
+    }
+    @include media-down(sm){
+        height: 70px;
+    }
 }
 .sponsorship-title{
     color: $text-color;
-    font-size: 35px;
     font-family: $secondary-font;
     h2{
+    font-size: 56px;
+
         font-weight: 100;
-
+        @include media-down(md){
+            font-size: 39px;
+        }
+        @include media-down(sm){
+            font-size: 23px;
+        }
     }
-
 }
 .sponsorship-img{
+    img{
+
+        @include media-down(md){
+            width: 335px;
+        }
+        @include media-down(sm){
+            width: 228px;
+        }
+    }
+ 
 
 }

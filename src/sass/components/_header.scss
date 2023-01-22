@@ -8,6 +8,12 @@ nav{
     align-items: center ;
     min-height: 69px;
     padding: 0 90px;
+    @include media-down(md){
+        justify-content: space-between;
+    }
+    @include media-down(sm){
+        padding: 0 25px;
+    }
     .cointainer-logo{
         display: flex;
         align-items: center;
@@ -36,12 +42,23 @@ nav{
         font-size: 13px;
         letter-spacing: 0px;
         width: 70%;
+        @include media-down(md){
+            display: none;
+        }
         li{
             list-style: none;
             a{
                 color: $text-color;
                 text-decoration: none;
             }
+        }
+    }
+    .house-icon{
+        display: none;
+        @include media-down(md){
+            display: block;
+            font-size: 30px;
+            color: $text-color;
         }
     }
 }

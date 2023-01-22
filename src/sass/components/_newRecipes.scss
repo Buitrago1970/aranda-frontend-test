@@ -1,7 +1,7 @@
 @import "../variables/variables.scss";
 
 .new-recipes{
-   padding: 0 100px;
+   padding: 0 10px;
 }
 .recipes-title{
     color: $red;
@@ -11,6 +11,12 @@
     font-size: 67px;
         font-family: $secondary-font;
         font-weight: 100;
+        @include media-down(md){
+            font-size: 54px;
+        }
+        @include media-down(sm){
+            text-align: center;
+        }
     }
 
 }
@@ -23,11 +29,14 @@
     height: 270px;
     position: relative;
     margin: 0 10px;
-    justify-content: center;
-    background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
-box-shadow: 4px 6px 10px #BFC4CAD1;
-border-radius: 16px;
-    
+    @include box;    
+    @include media-down(md){
+        width: 266px;
+    }
+    @include media-down(sm){
+        min-width: 180px;
+        min-height: 182px;
+    }
 }
 .recipe-image{
     width:100%;
@@ -35,13 +44,15 @@ border-radius: 16px;
     justify-content: center;
     position: absolute;
     bottom: 60%;
-    
     img{
    
     }
 }
 .recipe-info{
 margin-top: 30%;
+    @include media-down(sm){
+        margin-top: 40%;
+    }
 }
 
 
@@ -50,18 +61,23 @@ text-align: center;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
-width: 200px;
 margin: auto;
 color: $red;
+
 .title-name{
     font-size: 30px;
-    
+    @include media-down(sm){
+        font-size: 20px;
+    }
     
 }
 .title-product{  
     font-size: 30px;
     font-family: $secondary-font;
     font-weight: 100;
+    @include media-down(sm){
+        font-size: 20px;
+    }
  }
 }
 .recipe-ratings{
@@ -71,6 +87,11 @@ color: $red;
     padding: 0 20px;
     font-size: 26px;
     color: $text-color;
+    @include media-down(sm){
+        font-size: 17px;
+    padding: 6px 9px;
+
+    }
     .score{
         display: flex;
         align-items: center;

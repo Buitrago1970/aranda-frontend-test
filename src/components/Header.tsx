@@ -1,5 +1,7 @@
 import React from 'react'
 
+import houseIcon from '../assets/icons/ic_home.svg'
+
 
 
 export default function Navbar() {
@@ -34,6 +36,11 @@ export default function Navbar() {
             <a href="/contact">Sopas</a>
           </li>
           </ul>
+          <div className='house-icon'>
+            <a href='/'>
+              <img src={houseIcon} alt="house icon"/>
+            </a>
+          </div>
           </nav>
     </header>
   )

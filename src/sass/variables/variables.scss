@@ -10,3 +10,10 @@ $text-color:#425966;
 $principal-font: 'Poppins', sans-serif;
 $secondary-font: 'Monster Clubhouse', sans-serif;
 
+//breakpoints
+$breakpoints: (
+    sm: 428px,
+    itm : 695px,
+    md: 768px,
+    lg: 1279px,
+);

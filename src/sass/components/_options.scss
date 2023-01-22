@@ -1,9 +1,54 @@
+@import "../variables/variables.scss";
 .options{
     display: none;
+    @include media-down(md){
+        display: block;
+        position: relative;
+        height: 100px;
+    }
+    @include media-down(itm){
+        height: 200px;
+    }
+    @include media-down(sm){
+        height: 200px;
+    }
 }
 .cointainer-options-link{
+            width: 100%;
             list-style: none;
             display: flex;
-            padding: 0 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
             margin: 0;
+            position: absolute;
+            bottom: 41px;
+            li{
+                min-width: 106px;
+                height: 85px;
+                margin: 0 5px;
+                margin-bottom: 10px ;
+                font-size: 13px;
+                color: $text-color ;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include box;
+                @include media-down(sm){
+                    min-width: 114px;
+                    height: 92px;
+                    box-shadow: 0px 5px 9px #8395A766;
+                }
+              
+                    .img-container{
+                        img{
+                            width: 27px;
+                            height: 42px;
+                        }
+                    }
+                    p{
+                        margin:0;
+                    }
+                    
+            }
 }

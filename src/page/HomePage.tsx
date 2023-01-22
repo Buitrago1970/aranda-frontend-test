@@ -1,5 +1,5 @@
 import React,{useContext, useState, useEffect} from 'react'
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 import HeroImage from '../components/HeroImage'
 import Options from '../components/Options'
 import NewReipes from '../components/NewRecipes'
@@ -27,10 +27,10 @@ export default function HomePage() {
 
   return (
     <>
-    <Navbar/>
+    <Header/>
     <HeroImage/>
     <Options/>
-    <NewReipes />
+    {/* <NewReipes /> */}
     <Sponsorship/>
     </>
   )

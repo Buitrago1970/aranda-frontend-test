@@ -1,5 +1,8 @@
 @import "./variables/variables.scss";
 
+*{
+    box-sizing: border-box;
+}
 html{
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -8,4 +11,23 @@ body{
     padding: 0;
     margin: 0;
     font-family: $principal-font;
+}
+
+@mixin box {
+    justify-content: center;
+    background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 4px 6px 10px #BFC4CAD1;
+    border-radius: 16px;
+    opacity: 1;
+
+}
+
+@mixin media-down($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @error "Unknown breakpoint: #{$breakpoint}";
+    }
 }
