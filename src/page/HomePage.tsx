@@ -13,7 +13,6 @@ export default function HomePage() {
   const state = useContext(AppContext);
   const { setRecipes } = useContext(AppContext);
 
-
   const { data, status } = useQuery<{recipes: any[]}>(['randomRecipes', async () => {
     const response = await axios.get(
         'https://api.spoonacular.com/recipes/random?number=4&apiKey=3c4d9997a2954bbcad4b11794720ee4b'
@@ -29,8 +28,6 @@ export default function HomePage() {
       console.log(error)
     }
   });
-
-
   return (
     <>
       <Header/>
